@@ -1,0 +1,379 @@
+/* NAV */
+
+/* Nav container */
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+  list-style: none;
+  margin: 0; 
+  background: #2f514b;
+  /* height: 60px; */
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #fff;
+}
+
+.navigation a:hover {
+  background: #fff;
+  color: #2f514b;
+}
+
+.search{
+  max-width: 1400px;
+  padding: 20px 20px 0px;
+  display: flex;
+  box-sizing: border-box;
+  height: 40px;
+  justify-content: center;
+}
+
+.searchTerm {
+width: 100%;
+border-right: none;
+padding: 4px;
+height: 20px;
+border-radius: 5px 0 0 5px;
+outline: none;
+}
+
+
+
+.searchButton {
+width: 40px;
+height: 34px;
+color: #fff;
+border: 1px solid #fff;
+background-color: #2f514b;
+}
+ 
+
+/* nav log */
+.nav-logo{
+  margin-top: 6px;
+  width: 40px;
+  height: 40px;
+
+}
+
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+
+/* main body */
+
+.mac_pic{
+  padding-left: 100px;
+  /* width: 400px;
+  height: 400px; */
+}
+
+.margin5{
+  margin: 10px 0 0;
+}
+
+.characters {
+  font-size: 14px;
+  line-height: 1.42861;
+  font-weight: 400;
+  letter-spacing: -.016em;
+  font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  list-style: none;}
+
+.color{
+  text-align: left;
+  line-height: 0;
+  list-style: none;
+}
+
+.color li{
+  display:inline-block;
+  margin-inline: 5px;
+}
+
+.cart{
+  padding-top: 50px;
+}
+
+.btn{
+  color: white;
+  font-size: 15px;
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  background-color: #2f514b;
+  vertical-align:center;
+  margin-left: 10px;
+}
+
+
+.aboutus{
+  display: flex;  
+  flex-flow: row wrap;
+  justify-content: center;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  background-color: #fff;
+  /* height: 400px; */
+  font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+}
+
+.aboutus div{
+  margin-top: 10px;
+  /* border: 1px solid rgb(17, 17, 17); */
+}
+
+.aside-1 {
+  margin-left: 10%;;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(17, 17, 17);
+  /* height: 300px;
+  width: 500px; */
+}
+
+.aside-2 {
+  border: 1px solid rgb(17, 17, 17);
+  margin-right: 10%;
+  padding-left: 10px;;
+}
+
+
+
+.footer {
+  display: block;;
+  text-align: left;
+  background: #2f514b;
+  color: #fff;  
+  padding-top: 10px;
+  padding-left: 10%;
+}
+
+.footer-content{
+  font-size: 10px;
+  line-height: 30px;
+}
+
+
+
+/*content css style*/
+.fs-bg-title {
+  /* height: 80%; */
+  /* width: 90%; */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 25px;
+  padding: 10px;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--white);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /*line-height: 35px;*/
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.title{
+  font-size: 3em;
+}
+
+/* Center the title on mobile */
+@media screen and (max-width: 1200px) {
+  .fs-bg-title {
+    -webkit-transform: translate(-13%, -50%);
+    -ms-transform: translate(-13%, -50%);
+    transform: translate(-13%, -50%);
+    left: 20%;
+    margin-top: 50%;
+  }
+
+  .aside-1{
+    margin-left: 0;
+  }
+  
+
+}
+
+.two-items {
+  display: flex;  
+  flex-flow: row;
+  font-weight: bold;
+  text-align: left;
+}
+
+.item1{
+    background-image: url("../images/digital.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 500px;
+}
+
+.item2{
+  background-image: url("../images/marketing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 300px;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: #f9e6ac;
+  padding: 5px;
+  width: 350px;
+  height: 500px;
+  margin-top: 10px;
+  color: black;
+  text-align: left;
+}
+
+
+
+
+.para{
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.para1{
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 10px;
+}
+.imgstyle{
+  width: 350px;
+  /*margin-left: 4px ;
+  margin-top: 5px ;*/
+}
+
+.blackbutton{
+  color: white;
+  font-size: 15px;
+  height: 80px;
+  width: 320px;
+  background-color:#2f514b;
+  line-height: 80px;
+  text-align: center;
+  margin: 10px;
+}
+
+.flex-item1 {
+  padding: 5px;
+  width: 360px;
+  height: 520px;
+  margin-top: 10px;
+  color: black;
+  text-align: left;
+  margin-right: 10px;
+  border: solid 1px #000;
+}
+
+
+
+
+
+/* GLOBAL STYLES */
+
+/* Defining the color palette in CSS variables */
+:root {
+  --white: #fff;
+  --black: #222224;
+  --light-green: #b0d6cf;
+  --dark-green: #2f514b;
+}
+
+/* Reset padding and margin for all HTML elements and standardize box sizing */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for supported browsers */
+}
+
+body {
+  color: var(--black); /* set default color for all elements */
+  /* font-family: "Montserrat", sans-serif; set default font */
+  background-color: var(--white);
+}
+
+
+
+@media all and (max-width: 1200px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+  
+  .mac_pic{
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
+@media all and (min-width: 760px) {
+  .aside { flex: 1 0 0; }
+  .aside-1 .aside-2 {
+    margin-left: 0;
+    height: auto;
+    width: auto;
+  }
+}
+
+
+
